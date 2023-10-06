@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>GetDeLosT</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="script.js"></script>
+        
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+               <a href="Home.html" ><img src="logo.png" href  class="logo"></a>
+                <ul><b>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Find.html">Find</a></li>
+                    <li><a href="Found.html">Found</a></li>
+                    <li><a href="Reward.html">Reward</a></li>
+                </b>
+                </ul>
+            </div>
+            <div class="content">
+                    <h1>Found something valuable?</h1>
+                    <p>Register it on <a href="Home.html" style="color: rgb(174, 239, 239);">GetDeLosT</a> and help someone retrieve their lost item and win reward .
+                     
+                        </p>
+                        <div class="container">
+                            <button  class ="lrbutton" onclick="showLoginBox()"><span></span>Login</button>
+                            <button   class ="lrbutton" onclick="showRegisterBox()"><span></span>Register</button>
+                        </div>
+            </div>
+            
+
+            <div class="overlay" id="loginOverlay">
+                <div class="login-box">
+                   <form action="">
+                    <h2>Sign In</h2>
+                    <br>
+                    <div class="input-box-login">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <br>
+                    <div class="input-box-login">
+                        <span class="icon">
+                            <i class='bx bxs-lock-alt' ></i>
+                        </span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox"> Remember Me</label>
+                        <a href="#">Forget Password</a>
+                    </div>
+                    <button class="btn">Login</button>
+                    <div class="create-account">
+                        <p>Create A New Account? <button onclick="loginToSignUp()" class="register-link">Sign Up</button></p>
+                    </div>
+                </form>
+                  <button  class="close-btn" onclick="closeLoginBox()">Close</button>
+                </div>
+              </div>
+
+              <div class="overlay" id="registerOverlay">
+                <div class="register-box">
+                <form action="">
+                    <h2>Sign Up</h2>
+                    <div class="input-box-register">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" required>
+                        <label >Username</label>
+                    </div>
+                    <div class="input-box-register">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span>
+                        <input type="email" required>
+                        <label >Email</label>
+                    </div>
+                    <div class="input-box-register">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox"> I agree with this statment</label>
+                    </div>
+                    <button class="btn">Register</button>
+                    <div class="create-account">
+                        <p>Already Have An Account? <button onclick="signUpToLogin()" class="login-link">Sign In</button></p>
+                    </div>
+                </form>
+                <button  class="close-btn" onclick="closeRegisterBox()">Close</button>
+              </div>   
+            </div>
+        </div>
+    </body>
+</html>
